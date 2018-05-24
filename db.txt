@@ -1,0 +1,5 @@
+users: id, name, email, type(member, admin)
+Categories: id, name
+Articles: id, title, content, category_id, user_id
+Images: id, name, article_id
+Tags: id, name
