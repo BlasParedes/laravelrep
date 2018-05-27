@@ -19,9 +19,9 @@ class AddTagsTable extends Migration
             $table->timestamps();
         });
 
-        Schema::create('Tags', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('name',60);
+        Schema::create('article_tag', function (Blueprint $table) {
+            $table->integer('article_id')->unsigned();
+            $table->integer('tag_id')->unsigned();
             $table->timestamps();
         });
     }
