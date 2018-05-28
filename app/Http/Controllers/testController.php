@@ -13,6 +13,7 @@ class testController extends Controller
             $article->user;
             $article->tags;
         //});
-        dd($article);
+        //dd($article);
+        return view('test.index')->with('article', $article);
     }
 }
